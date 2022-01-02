@@ -55,8 +55,8 @@ const Embed = new Discord.MessageEmbed()
     .setAuthor("Commands", message.author.avatarURL({
         dynamic: true
     }))
-    .setDescription(Description + AllCommands.join("") + "" + "\n\n" + "**Links -**" + ` [Join Support](https://discord.gg/7uZyA5e8YU) • [Invite Me](https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&permissions=8&scope=bot)`)
-    .setFooter(`Requested by ${message.author.username}`, bot.user.displayAvatarURL())
+    .setDescription(Description + AllCommands.join("") + "" + "\n\n" + "**Links -**" + ` [Join Support](https://discord.gg/M5aaVRYgFN) • [Galaxy Discord](https://discord.gg/2d59sSQ)`)
+    .setFooter(`Requested by ${message.author.username}`, bot.user.displayAvatarURL()) /**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&permissions=8&scope=bot)**/
     .setTimestamp();
 
 if (!args[0]) return message.channel.send(Embed);

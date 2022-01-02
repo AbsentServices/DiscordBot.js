@@ -46,7 +46,7 @@ bot.games = new Map();
    const app = express();
    const port = 3000;
 
-app.get('/', (req, res) => res.send('Hey there!'))
+app.get('/', (req, res) => res.send('Absent is loading'))
 
 app.listen(port, () =>
 console.log(`Your app is listening a http://localhost:${port}`)
@@ -56,7 +56,7 @@ console.log(`Your app is listening a http://localhost:${port}`)
 		`[INFO]: watching ${bot.guilds.cache.size} Servers, ${
 			bot.channels.cache.size
 		} channels & ${bot.users.cache.size} users,
-    Join support server https://discord.gg/JnXmFs3P2c`
+    Absent is ready`
 	);
 	console.log('-------------------------------------');
 	const botpresence = bot.config.activity;
