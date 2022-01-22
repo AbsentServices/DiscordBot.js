@@ -17,7 +17,7 @@ config: {
             .setAuthor(`${bot.user.username} v${version}`, bot.user.displayAvatarURL())
             .setThumbnail(bot.user.displayAvatarURL({ dynamic: true }))
             .addField('❯ Uptime :', `${ms(bot.uptime)}`, true)
-            .addField('❯ WebSocket Ping:', `${bot.ws.ping}ms`, true)
+            .addField('❯ Ping:', `${bot.ws.ping}ms`, true)
             .addField('❯ Memory:', `${(process.memoryUsage().rss / 1024 / 1024).toFixed(2)} MB RSS\n${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB Heap`, true)
             .addField('❯ Guild Count:', `${bot.guilds.cache.size} guilds`, true)
             .addField(`❯ User Count:`, `${bot.guilds.cache.reduce((users , value) => users + value.memberCount, 0)} users`, true)

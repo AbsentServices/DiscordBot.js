@@ -5,6 +5,8 @@
 
 # Discord.js Files
 .env
+Todo.txt
+/1. todo/
 
 # User-specific files
 *.rsuser
